@@ -1,5 +1,6 @@
 import React from 'react'
 
+// AB16 ClickWait in React as Component
 function AB16_ClickWait() {
     var alertTimerId = 0;
     function colorTimerFun() {

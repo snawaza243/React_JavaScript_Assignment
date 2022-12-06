@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="myID"></p>
+
+    <script>
+        function Person(Name, Age, Gender) {
+            this.name = Name,
+                this.age = Age,
+                this.gender = Gender
+        }
+
+        const person1 = new Person('Shahnawaz', 22, 'M');
+        const person2 = new Person('Sid', 21, 'F');
+        const person3 = new Person('Nawaz', 22, 'M');
+        const person4 = new Person('Shahu', 22, 'M');
+        person1.course = 'BTech' //adding new property to person1 with or without parameter
+
+        document.getElementById("myID").innerHTML = 
+        '<br> Name : ' + person1.name + 
+        '<br> Age : ' + person1.age + 
+        '<br> Gender : ' + person1.gender + 
+        '<br> Course : ' + person1.course;
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="button_Id1" onclick="fn1()">Onclick() button</button>
+    <input id="button_Id2"  type="textbox"  onblur="fn2()" placeholder="Onblur()">
+    <input id="button_Id3"  type="text"  onfocus="fn3(this)" placeholder="Onfocus()">
+    <button id="button_Id4"   onmouseover="fn4()">Onmouseover() event working</button>
+
+</body>
+<script>
+    function fn1() {
+        alert("Onclick event working")
+
+    }
+
+    function fn2() {
+        alert(`By onblur Your input is ${document.getElementById('button_Id2').value}`)
+
+    }
+
+    function fn3(x) {
+        x.style.background = 'black'
+        x.style.color = 'white'
+    }
+
+    function fn4() {
+        alert("Onmouseover() event working")
+
+    }
+</script>
+</body>
+
+</html>
