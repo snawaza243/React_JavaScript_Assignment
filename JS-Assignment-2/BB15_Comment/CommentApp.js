@@ -4,6 +4,7 @@ import Comment from './Comment';
 import img1 from './img1.jpg'
 function CommentApp(props)
 {
+    var 
     return (
         <>
             <Avatar 
