@@ -8,11 +8,11 @@ function CommentApp(props)
         <>
             <Avatar 
             avatarURL={img1} 
-            alt='Avatar Pic' 
+            avatartText='Avatar Pic' 
             />
 
             <Comment 
-            commentText='comment app is working'
+            commentText='comment app by sam'
             commentDate='06/12/2022'
              />
         </>
