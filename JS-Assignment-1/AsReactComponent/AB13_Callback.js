@@ -9,7 +9,7 @@ function AB13_Callback() {
         console.log(name)
     }
 
-    showName(myName, 'Sam')
+    showName(myName, 'Shahnawaz')
     // example 2
     function greet(name) {
         return `Hi!! ${name} `;
@@ -24,7 +24,7 @@ function AB13_Callback() {
     return (
         <>
             <div>
-                <h1>Output: {myName('sam', showName)} {showName}</h1>
+                <h1>Output: {myName('Shahnawaz', showName)} {showName}</h1>
             </div>
         </>
     )
