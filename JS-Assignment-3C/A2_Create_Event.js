@@ -21,4 +21,8 @@ function EventApp(event){
         </>
     )
 }
+<<<<<<< HEAD
 export default EventApp;
+=======
+export default EventApp;
+>>>>>>> 53ce61c600970aa99fb9db89799f7cb31cdd9b91
