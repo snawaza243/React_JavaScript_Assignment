@@ -1,0 +1,1 @@
+// the JSNO file is a contain JSNO object and array for creating JSON file we just need to open array text edition and write the data and save that file with JSNO extension that's it.
