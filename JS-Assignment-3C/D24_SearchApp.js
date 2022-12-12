@@ -1,10 +1,10 @@
-
+// not working
 import axios from "axios"
 import { useEffect } from "react"
 import { useState } from "react"
 import { Card } from "semantic-ui-react"
 
-export default function SearchAppPosts(){
+export default function SearchAppPosts() {
 
     const [apiData, setApiData] = useState([])
     const [filteredResult, setFilteredResult] = useState([])
@@ -12,37 +12,38 @@ export default function SearchAppPosts(){
 
     useEffect(() => {
         axios.get('https://jsonplaceholder.typicode.com/users')
-        .then((response)=> { setApiData(response.Data) })
+            .then((response) => { setApiData(response.Data) })
     }, [])
 
-    const SearchItem = (SearchValue)=>{
+    const SearchItem = (SearchValue) => {
         setSearchInput(SearchValue)
-        if(searchInput !==' ')
-        {
-            const filteredData = apiData.filter((item)=>{
+        if (searchInput !== ' ') {
+            const filteredData = apiData.filter((item) => {
                 return object.values(item).join(''.toLowerCase().includes(searchInput.toLowerCase()))
 
             })
             setFilteredResult(filteredData)
-        }else{setFilteredResult(apiData)}
+        } else { setFilteredResult(apiData) }
 
-        return(
+        return (
             <>
                 <div>
-                    <input type="text" icon='search' placeholder="Search..." onChange={(e)=>searchItems(e.target.value)}/>
+                    <input type="text" icon='search' placeholder="Search..." onChange={(e) => searchItems(e.target.value)} />
                     <Card.Group itemPreRow={3} >
-                        {searchInput.length.filteredResult.map((item)=>{return(
-                            <Card>
-                                <Card.Content>
-                                    <Card.Header>
-                                        {item.name}
-                                    </Card.Header>
-                                    <Card.Description>
-                                        {item.email}
-                                    </Card.Description>
-                                </Card.Content>
-                            </Card>
-                        )})}
+                        {searchInput.length.filteredResult.map((item) => {
+                            return (
+                                <Card>
+                                    <Card.Content>
+                                        <Card.Header>
+                                            {item.name}
+                                        </Card.Header>
+                                        <Card.Description>
+                                            {item.email}
+                                        </Card.Description>
+                                    </Card.Content>
+                                </Card>
+                            )
+                        })}
                     </Card.Group>
                 </div>
             </>
@@ -70,6 +71,5 @@ export default function SearchAppPosts(){
             </div>
         </>
     )
-
 
 }
