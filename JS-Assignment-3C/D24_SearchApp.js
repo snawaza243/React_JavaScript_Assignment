@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 // not working
+=======
+/**
+*Note : Currently not working
+*/
+>>>>>>> 64271c45446bd7e80709b50ec597cc923c24969b
 import axios from "axios"
 import { useEffect } from "react"
 import { useState } from "react"
@@ -72,4 +78,9 @@ export default function SearchAppPosts() {
         </>
     )
 
+<<<<<<< HEAD
 }
+=======
+
+}
+>>>>>>> 64271c45446bd7e80709b50ec597cc923c24969b
