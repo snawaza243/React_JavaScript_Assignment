@@ -1,10 +1,7 @@
 import React, { useState } from "react"
 
-
 const TodoInput = ({ createTodoItem }) => {
-
     const [value, setValue] = useState("")
-
     const handleSubmit = (e) => {
         e.preventDefault();
         if (value === "") {
@@ -13,7 +10,6 @@ const TodoInput = ({ createTodoItem }) => {
         createTodoItem(value)
         setValue("")
     }
-
     return (
         <form onSubmit={handleSubmit}>
             <input
