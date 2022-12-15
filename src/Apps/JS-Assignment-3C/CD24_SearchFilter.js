@@ -10,7 +10,7 @@ export default function SearchFilter(props, item) {
         const fetchData = () => {
             fetch('https://jsonplaceholder.typicode.com/users')
                 .then((res) => { res.json() })
-                .then((json) => { setData(json) })
+                .then((json) => { setData(json) searchApiData(json) })
             // .catch(function(error) {console.log(error)})
         }
         fetchData();
@@ -21,9 +21,7 @@ export default function SearchFilter(props, item) {
             setData(searchApiData);
         }
         else {
-            const filterResult = searchApiData.filter(item.name.toLowerCase()
-                                    .includes(e.target.value.toLowerCase()))
-
+            const filterResult = searchApiData.filter(item.name.toLowerCase().includes(e.target.value.toLowerCase()))
             setData(filterResult)
 
             // if (filterResult.length > 0) {
