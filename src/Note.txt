@@ -1,0 +1,10 @@
+Build a course list application with basic react concepts and rest API. Follow the below mentioned steps to build the application.
+(a). Make use of JSON server to create a static API (Containing courses JSON data)
+
+(b). Under each course there must be unique button
+
+(c). On clicking, Inquire button of form should be displayed. Here user should be able to display their details.
+
+(d). On clicking the submit button, the user information should be added to Jason file.
+
+(e). Create one more route to display user enquires.

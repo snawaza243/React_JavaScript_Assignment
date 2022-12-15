@@ -1,0 +1,30 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "course_name": "JavaScript and its Framework",
+            "course_code": "BCSE-534",
+            "description": " JavaScript and its Framework Tutorial"
+        },
+        {
+            "id": 2,
+            "course_name": "JavaScript and its Framework Lab",
+            "course_code": "BCSE-534L",
+            "description": " JavaScript and its Framework Lab Tutorial"
+        },
+        {
+            "id": 3,
+            "course_name": "Python and its Framework Lab",
+            "course_code": "BCSE-534L",
+            "description": " Python and its Framework Lab Tutorial"
+        }
+    ],
+    "courses_enquire ": [
+        {
+            "id": 1,
+            "course_duration": "6",
+            "course_credit": "3.5",
+            "course_fee": "5000"
+        }
+    ]
+}

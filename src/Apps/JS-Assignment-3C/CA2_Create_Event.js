@@ -20,9 +20,4 @@ function EventApp(event){
             <button onClick={doSomething}>Click here!</button>
         </>
     )
-}
-<<<<<<< HEAD
-export default EventApp;
-=======
-export default EventApp;
->>>>>>> 53ce61c600970aa99fb9db89799f7cb31cdd9b91
+} 

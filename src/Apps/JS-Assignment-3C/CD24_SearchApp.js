@@ -1,17 +1,13 @@
-<<<<<<< HEAD
 // not working
-=======
 /**
 *Note : Currently not working
 */
->>>>>>> 64271c45446bd7e80709b50ec597cc923c24969b
 import axios from "axios"
 import { useEffect } from "react"
 import { useState } from "react"
 import { Card } from "semantic-ui-react"
 
-export default function SearchAppPosts() {
-
+function SearchAppPosts() {
     const [apiData, setApiData] = useState([])
     const [filteredResult, setFilteredResult] = useState([])
     const [searchInput, setSearchInput] = useState('')
@@ -26,10 +22,12 @@ export default function SearchAppPosts() {
         if (searchInput !== ' ') {
             const filteredData = apiData.filter((item) => {
                 return object.values(item).join(''.toLowerCase().includes(searchInput.toLowerCase()))
-
             })
             setFilteredResult(filteredData)
-        } else { setFilteredResult(apiData) }
+        } 
+        else { 
+            setFilteredResult(apiData) 
+        }
 
         return (
             <>
@@ -77,10 +75,4 @@ export default function SearchAppPosts() {
             </div>
         </>
     )
-
-<<<<<<< HEAD
-}
-=======
-
-}
->>>>>>> 64271c45446bd7e80709b50ec597cc923c24969b
+}export default SearchAppPosts

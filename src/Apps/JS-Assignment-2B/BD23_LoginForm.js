@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, FormGroup, Input, Label, Button ,Col,FormText} from "reactstrap";
+import { Form, FormGroup, Input, Label, Button ,Col} from "reactstrap";
 function LoginForm() {
 
     return (

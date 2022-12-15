@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { useEffect } from "react";
 import restData from './db.json'
-import img1 from './1.png'
+// import img1 from './1.png'
 
 export default function RestaurantApp() {
     const [Users, fetchUsers] = useState([])
@@ -15,8 +14,6 @@ export default function RestaurantApp() {
     //         console.log(res)
     //     })
     // }, [])
-
-
 
     return (
         <>
